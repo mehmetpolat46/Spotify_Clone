@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="shortcut icon" href="IMG/iconn.webp" type="image/x-icon">
+    <!-- Bootstrap icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <aside>
+      <img src="IMG/spotify.png" />
+      <nav>
+        <a href="">
+          <i class="bi bi-house-fill"></i>
+          <span>Home</span>
+        </a>
+        <a href="">
+          <i class="bi bi-search"></i>
+          <span>Search</span>
+        </a>
+        <a href="">
+          <i class="bi bi-bookmarks-fill"></i>
+          <span>Library</span>
+        </a>
+        <a href="">
+          <i class="bi bi-music-note-list"></i>
+          <span>Play List</span>
+        </a>
+        <a href="">
+          <i class="bi bi-heart-fill"></i>
+          <span>Liked</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <form>
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+            
+        </form>
+        <ul>
+            <li>Premium</li>
+            <li>Support</li>
+            <li>Download</li>
+            <li>Sign Up</li>
+        </ul>
+      </header>
+      <div class="songs">
+        <h2>Most Popular</h2>
+        <div class="list"></div>
+      </div>
+    </main>
+    <div class="playing">
+        <div class="info"></div>
+        <audio controls>
+            <source src=""
+            />
+        </audio>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

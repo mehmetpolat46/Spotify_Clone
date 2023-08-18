@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  background: black;
+  color: white;
+  font-family: "poppins";
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  gap: 40px;
+}
+aside img {
+  max-width: 130px;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+aside nav a {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+  transition: all 0.3s;
+  padding: 10px;
+  border-radius: 10px;
+}
+aside nav a:hover {
+  background: rgba(83, 81, 81, 0.685);
+}
+
+main {
+  width: 100%;
+  background: rgb(32, 32, 32);
+}
+
+main header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+main header form {
+  display: flex;
+}
+main header form input {
+  padding: 8px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  outline: none;
+}
+main header form button {
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  background: rgba(115, 231, 115, 0.719);
+  color: white;
+}
+main header ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  align-items: center;
+  font-size: 14px;
+}
+main header ul :nth-child(4) {
+  background: white;
+  color: black;
+}
+main header ul li {
+  padding: 5px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main header ul li:hover {
+  background: rgba(92, 84, 84, 0.829);
+}
+
+main .songs h2 {
+  padding: 20px;
+}
+main .songs .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+main .songs .list .card {
+  width: 160px;
+  padding: 15px;
+  background: #181818;
+  border-radius: 6px;
+  cursor: pointer;
+}
+main .songs .list .card:hover .play {
+  bottom: 20px;
+  opacity: 1;
+}
+main .songs .list .card h4 {
+  margin-bottom: 6px;
+}
+main .songs .list .card figure {
+  position: relative;
+}
+main .songs .list .card figure img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .songs .list .card figure .play {
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+  background: rgb(89, 236, 89);
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: #fff;
+  opacity: 1;
+  transition: all 0.3s;
+  opacity: 0;
+}
+main .songs .list .card figure .play:hover {
+  background: rgb(85, 161, 85);
+}
+
+.playing {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 10px 40px;
+  width: 100%;
+  background-image: linear-gradient(113deg, #5c69a6 0%, #c850c0 46%, #ffcc70 100%);
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+.playing .info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.playing .info p:nth-child(1) {
+  margin-bottom: 5px;
+  color: black;
+}
+.playing .info img {
+  width: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.animate {
+  animation: turn 3.5s infinite linear;
+}
+
+@keyframes turn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
